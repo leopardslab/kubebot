@@ -1,11 +1,10 @@
 package entity
 
+import "os/exec"
+
 type Command struct {
 	Head      string
 	Arguments []string
-	Flags     []string
-	ArgCount  int
-	Category  string
 }
 
 type CommandResult struct {
@@ -20,13 +19,10 @@ type CommandContext struct {
 	IsRequired bool // False if all arguments are satisfied
 }
 
-func NewCommand(head, category string, args, flags []string, argc int) (*Command, error) {
+func NewCommand(head, category string, args []string) (*Command, error) {
 	return &Command{
 		Head:      head,
 		Arguments: args,
-		Flags:     flags,
-		ArgCount:  argc,
-		Category:  category,
 	}, nil
 }
 
@@ -44,4 +40,9 @@ func NewCommandContext(com Command, query []string, req bool) *CommandContext {
 		Query:      query,
 		IsRequired: req,
 	}
+}
+func (c *Command) Run() (string, error) {
+	cmd := exec.Command(c.Head, c.Arguments...)
+	out, err := cmd.CombinedOutput()
+	return string(out), err
 }
