@@ -1,0 +1,24 @@
+syntax = "proto3";
+package kubebot_Executor;
+option go_package="./kubebot";
+
+message BotCommandRequest {
+  string Content =1;
+  string Sender=2;
+  string Mentions=3;
+  string BotId=4;
+  string Platform=5;
+}
+
+message BotCommandResponse{
+  string Response=1;
+  bool isQuery=2; //
+  string query=3; // If some flags are missing
+  string command=4; // Original command for which we need additional info
+}
+
+
+
+service MessageChatServer{
+  rpc GetMessageResponse(BotCommandRequest) returns (BotCommandResponse){}
+}
