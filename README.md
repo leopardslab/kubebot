@@ -10,5 +10,8 @@ KubeBot is a smart tool that pulls out of box metrics, traces, events and logs c
 
 The project's workflow is as shown in the figure below, as we move ahead towards the execution, it may subject to change.
 
-![KubeBot Design]()
+[Project Link on GSoC Portal](https://summerofcode.withgoogle.com/programs/2022/projects/CrF9bzaI)
+
+
+![KubeBot Design](https://user-images.githubusercontent.com/48913548/174438534-310ac132-64fb-4e7e-9c74-f21fd864a508.jpeg)
 
