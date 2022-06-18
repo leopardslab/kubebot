@@ -1,0 +1,6 @@
+apiVersion: kbot.xyz.com/v1alpha1
+kind: Botapi
+metadata:
+  name: botapi-sample
+spec:
+  # TODO(user): Add fields here
