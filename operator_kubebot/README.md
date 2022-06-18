@@ -10,7 +10,7 @@ You’ll need a Kubernetes cluster to run against. You can use [KIND](https://si
 
 ### Running on the cluster
 1. Install Instances of Custom Resources:
-
+ 
 ```sh
 kubectl apply -f config/samples/
 ```
