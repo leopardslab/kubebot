@@ -1,0 +1,24 @@
+# permissions for end users to edit botapis.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: botapi-editor-role
+rules:
+- apiGroups:
+  - kbot.xyz.com
+  resources:
+  - botapis
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - kbot.xyz.com
+  resources:
+  - botapis/status
+  verbs:
+  - get

@@ -1,0 +1,19 @@
+domain: xyz.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operkbot
+repo: github.com/xyz/operkbot
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: xyz.com
+  group: kbot
+  kind: Botapi
+  path: github.com/xyz/operkbot/api/v1alpha1
+  version: v1alpha1
+version: "3"
