@@ -6,9 +6,9 @@ Kubernetes is a great tool for container orchestration, running Kubernetes in yo
 
 KubeBot is a smart tool that pulls out of box metrics, traces, events and logs collection for applications running inside Kubernetes and reports all the collected data on a single dashboard and push notifications to users for critical ones. The collected metrics, traces, events and logs will help to debug the application running inside Kubernetes faster and effectively. A main feature of KubeBot is that after collecting traces, it does a root-cause analysis and sends alerts to the user regarding fixing the issue occuring in the cluster.
 
-## Project High Level Design:
+## Kubebot Architecture:
 
-The project's workflow is as shown in the figure below, as we move ahead towards the execution, it may subject to change.
+The Kubebot's architecture is as shown in the figure below, as we move ahead towards the execution, it may subject to change.
 
 [Project Link on GSoC Portal](https://summerofcode.withgoogle.com/programs/2022/projects/CrF9bzaI)
 
