@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: grafana-pv
+spec:
+  storageClassName: ""
+  capacity:
+    storage: 2Gi
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    server: "{{ .Values.grafanaNFS }}"
+    path: "/"
