@@ -4,16 +4,26 @@ layout:
 plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
-projectName: temp
-repo: github.com/leopardslab/kubebot
-resources:
-- api:
-    crdVersion: v1
-    namespaced: true
-  controller: true
-  domain: example.com
-  group: metrics.k8s.io
-  kind: NodeMetrics
-  path: github.com/leopardslab/kubebot/api/v1beta1
-  version: v1beta1
-version: "3"
+  
+######################################
+#fixing conflicts
+#<<<<<<< prom-grafana-integration
+#projectName: kbot
+#repo: github.com/example/kbot
+#=======
+#projectName: temp
+#repo: github.com/leopardslab/kubebot
+#resources:
+#- api:
+#    crdVersion: v1
+#    namespaced: true
+#  controller: true
+#  domain: example.com
+#  group: metrics.k8s.io
+#  kind: NodeMetrics
+#  path: github.com/leopardslab/kubebot/api/v1beta1
+#  version: v1beta1
+#>>>>>>> main
+#version: "3"
+######################################
+#fixing conflicts
