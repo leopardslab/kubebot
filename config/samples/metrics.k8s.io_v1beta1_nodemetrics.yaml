@@ -1,0 +1,6 @@
+apiVersion: metrics.k8s.io.example.com/v1beta1
+kind: NodeMetrics
+metadata:
+  name: nodemetrics-sample
+spec:
+  # TODO(user): Add fields here

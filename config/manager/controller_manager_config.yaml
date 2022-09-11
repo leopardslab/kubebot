@@ -8,7 +8,18 @@ webhook:
   port: 9443
 leaderElection:
   leaderElect: true
-  resourceName: e1670917.example.com
+  
+  
+######################################
+#fixing conflicts
+#<<<<<<< prom-grafana-integration
+#  resourceName: e1670917.example.com
+#=======
+#  resourceName: 07c1d13a.example.com
+#>>>>>>> main
+######################################
+#fixing conflicts
+
 #   leaderElectionReleaseOnCancel defines if the leader should step down volume 
 #   when the Manager ends. This requires the binary to immediately end when the
 #   Manager is stopped, otherwise, this setting is unsafe. Setting this significantly
