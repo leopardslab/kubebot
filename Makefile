@@ -29,16 +29,6 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 #
 # For example, running 'make bundle-build bundle-push catalog-build catalog-push' will build and push both
 
-######################################
-#fixing conflicts
-#<<<<<<< prom-grafana-integration
-## example.com/kbot-bundle:$VERSION and example.com/kbot-catalog:$VERSION.
-#IMAGE_TAG_BASE ?= example.com/kbot
-#=======
-## example.com/temp-bundle:$VERSION and example.com/temp-catalog:$VERSION.
-#IMAGE_TAG_BASE ?= example.com/temp
-#>>>>>>> main
-######################################
 
 
 # BUNDLE_IMG defines the image:tag used for the bundle.
