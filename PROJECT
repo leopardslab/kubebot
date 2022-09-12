@@ -4,9 +4,7 @@ layout:
 plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
-######################################
-#fixing conflicts
-#<<<<<<< custom-operator
+
 #projectName: kbot
 #repo: github.com/example/kbot
 #=======
@@ -23,4 +21,4 @@ plugins:
 #  path: github.com/leopardslab/kubebot/api/v1beta1
 #  version: v1beta1
 #>>>>>>> main
-version: "3"
+

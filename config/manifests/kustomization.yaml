@@ -1,7 +1,17 @@
 # These resources constitute the fully configured set of manifests
 # used to generate the 'manifests/' directory in a bundle.
 resources:
-- bases/temp.clusterserviceversion.yaml
+
+######################################
+#fixing conflicts
+#<<<<<<< prom-grafana-integration
+#- bases/kbot.clusterserviceversion.yaml
+#=======
+#- bases/temp.clusterserviceversion.yaml
+#>>>>>>> main
+######################################
+#fixing conflicts
+
 - ../default
 - ../samples
 - ../scorecard
