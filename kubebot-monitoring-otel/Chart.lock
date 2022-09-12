@@ -5,5 +5,8 @@ dependencies:
 - name: opentelemetry-operator
   repository: https://open-telemetry.github.io/opentelemetry-helm-charts
   version: 0.9.4
-digest: sha256:c903110582a4d585f87bddec1e44fa391defa0c2a3027fa68c97c1c9d5263265
-generated: "2022-07-23T17:31:40.230397413+05:30"
+- name: filebeat
+  repository: https://helm.elastic.co
+  version: 7.17.3
+digest: sha256:daff205d35bfb25c066f4f6cbc2669eee2395cec11f7faa0d63dacef2cd58189
+generated: "2022-09-12T18:42:32.12894+05:30"
