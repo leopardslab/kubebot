@@ -36,4 +36,3 @@ dependencies:
     condition: filebeat.enabled
     version: 7.17.3
     repository: https://helm.elastic.co
-    fvvf
