@@ -1,0 +1,10 @@
+- key: okta
+  title: Okta
+  description: >
+    Module for handling system logs from Okta.
+  fields:
+    - name: okta
+      type: group
+      description: >
+        Fields from Okta.
+      fields:
