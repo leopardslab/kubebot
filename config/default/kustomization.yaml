@@ -1,29 +1,12 @@
 # Adds namespace to all resources.
-######################################
-#fixing conflicts
-#<<<<<<< prom-grafana-integration
-#namespace: kbot-system
-#=======
-#namespace: temp-system
-#>>>>>>> main
-######################################
-#fixing conflicts
+namespace: temp-system
 
 # Value of this field is prepended to the
 # names of all resources, e.g. a deployment named
 # "wordpress" becomes "alices-wordpress".
 # Note that it should also match with the prefix (text before '-') of the namespace
 # field above.
-
-######################################
-#fixing conflicts
-#<<<<<<< prom-grafana-integration
-#namePrefix: kbot-
-#=======
-#namePrefix: temp-
-#>>>>>>> main
-######################################
-#fixing conflicts
+namePrefix: temp-
 
 # Labels to add to all resources and selectors.
 #commonLabels:
@@ -39,17 +22,7 @@ bases:
 # [CERTMANAGER] To enable cert-manager, uncomment all sections with 'CERTMANAGER'. 'WEBHOOK' components are required.
 #- ../certmanager
 # [PROMETHEUS] To enable prometheus monitor, uncomment all sections with 'PROMETHEUS'.
-
-
-######################################
-#fixing conflicts
-#<<<<<<< prom-grafana-integration
-#../prometheus
-#=======
-##- ../prometheus
-#>>>>>>> main
-######################################
-#fixing conflicts
+#- ../prometheus
 
 patchesStrategicMerge:
 # Protect the /metrics endpoint by putting it behind auth.

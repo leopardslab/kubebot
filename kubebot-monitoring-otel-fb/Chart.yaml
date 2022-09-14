@@ -1,0 +1,38 @@
+apiVersion: v2
+name: kubebot-monitoring-otel
+description: A Helm chart for 'kubebot' developed under SCoRe Lab in GSoC 2022. This Chart downloads required dependencies for Root Cause Analysis component of kubebot.
+
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 0.1.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+# It is recommended to use it with quotes.
+appVersion: "1.0.1"
+
+dependencies:
+  - name: kube-prometheus-stack
+    condition: kube-prometheus-stack.enabled
+    version: 38.0.0
+    repository: https://prometheus-community.github.io/helm-charts
+  - name: opentelemetry-operator
+    condition: opentelemetry-operator.enabled
+    version: 0.9.4
+    repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+  - name: filebeat
+    condition: filebeat.enabled
+    version: 7.17.3
+    repository: https://helm.elastic.co

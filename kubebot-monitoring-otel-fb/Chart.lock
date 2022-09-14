@@ -1,0 +1,12 @@
+dependencies:
+- name: kube-prometheus-stack
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 38.0.0
+- name: opentelemetry-operator
+  repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.9.4
+- name: filebeat
+  repository: https://helm.elastic.co
+  version: 7.17.3
+digest: sha256:daff205d35bfb25c066f4f6cbc2669eee2395cec11f7faa0d63dacef2cd58189
+generated: "2022-09-14T07:16:15.442758+05:30"
