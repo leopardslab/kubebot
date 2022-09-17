@@ -1,0 +1,77 @@
+{
+    "@timestamp": "2017-10-12T08:05:34.853Z",
+    "event": {
+        "dataset": "linux.memory",
+        "duration": 115000,
+        "module": "linux"
+    },
+    "linux": {
+        "memory": {
+            "hugepages": {
+                "default_size": 2097152,
+                "free": 0,
+                "reserved": 0,
+                "surplus": 0,
+                "swap": {
+                    "out": {
+                        "fallback": 0,
+                        "pages": 0
+                    }
+                },
+                "total": 0,
+                "used": {
+                    "bytes": 0,
+                    "pct": 0
+                }
+            },
+            "page_stats": {
+                "direct_efficiency": {
+                    "pct": 0.3419
+                },
+                "kswapd_efficiency": {
+                    "pct": 0.8922
+                },
+                "pgfree": {
+                    "pages": 16341381567
+                },
+                "pgscan_direct": {
+                    "pages": 21037589
+                },
+                "pgscan_kswapd": {
+                    "pages": 49831
+                },
+                "pgsteal_direct": {
+                    "pages": 7193725
+                },
+                "pgsteal_kswapd": {
+                    "pages": 44459
+                }
+            },
+            "swap": {
+                "free": 8586252288,
+                "in": {
+                    "pages": 72435
+                },
+                "out": {
+                    "pages": 2032475
+                },
+                "readahead": {
+                    "cached": 5,
+                    "pages": 29
+                },
+                "total": 8589930496,
+                "used": {
+                    "bytes": 3678208,
+                    "pct": 0.0004
+                }
+            }
+        }
+    },
+    "metricset": {
+        "name": "memory",
+        "period": 10000
+    },
+    "service": {
+        "type": "linux"
+    }
+}
