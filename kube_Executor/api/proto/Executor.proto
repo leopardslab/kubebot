@@ -1,0 +1,20 @@
+syntax = "proto3";
+package kubebot_Executor;
+option go_package="./kubebot_executor";
+
+message ExecuteRequest{
+  string commandStr=1;
+}
+
+message ExecuteResponse{
+  string result=1; //formatted result
+  string error=2;
+  string details=3;
+}
+
+
+service ExecutorRoutes{
+
+  rpc ExecuteCommand(ExecuteRequest) returns(ExecuteResponse){}
+
+}
